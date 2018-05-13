@@ -1,0 +1,201 @@
+.mainBanner {
+    min-height: 560px;
+    background-image: url(../img/girl.jpg);
+    background-position: bottom center;
+    display: flex;
+    align-items: center;
+    h1 {
+        color: #ffffff;
+        font-size: 72px;
+        line-height: 75px;
+        font-weight: 700;
+    }
+}
+
+.info {
+    padding: 30px 0;
+
+    p {
+        font-size: 18px;
+        color: #000;
+    }
+
+    .autor {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        img {
+            width: 40px;
+            margin-right: 20px;
+        }
+    }
+
+    .links {
+        text-align: right;
+        margin-top: 50px;
+        display: block;
+        a {
+            color: $primary-color;
+            font-size: 18px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin: 0 20px;
+            text-align: center;
+            &:hover {
+                img {
+                    transform: scale(1.1)
+                }
+            }
+        }
+        img {
+            width: 50px;
+            display: block;
+            margin: 0 auto;
+            transition: all 0.3s;
+        }
+        
+    }
+    .aside {
+        h3 {
+            font-size: 24px;
+            color: $primary-color;
+        }
+
+        ol {
+            margin-top: 30px;
+            padding-left: 20px;
+            li {
+                font-size: 24px;
+                color: $primary-color;
+                margin-bottom: 20px;
+                a {
+                    font-size: 24px;
+                    color: $primary-color;
+                }
+            }
+        }
+        
+        .date {
+            font-size: 18px;
+            color: #999999;
+
+        }
+
+        h4 {
+            color: #4D4D4D;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .bar {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            .progress {
+                height: 10px;
+                width: 75%;
+                border-radius: 5px;
+                background-color: #999999;
+                margin: 0 10px 0;
+                overflow: hidden;
+                div {
+                    transition: all 1.5s;
+                    width: 0%;
+                    height: 10px;
+                    background-color: $primary-color;
+                }
+            }
+            span {
+                font-size: 24px;
+                color: #999999;
+            }
+        }
+
+        .alumnos {
+            color: $primary-color;
+            font-size: 24px;
+            margin-top: 20px;
+            span {
+                color: #999999;
+            }
+            .users {
+                i {
+                    transition: all 0.3s;
+                    &:nth-child(4n) {
+                        color: #999999;
+                    }
+                    &:nth-child(7n) {
+                        color: #666;
+                    }
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .fa-chevron-down {
+                color: $yellow;
+                text-align: center;
+                margin: 0 auto;
+                display: block;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.label {
+    background: $primary-color;
+    background-image:  url(../img/blue-bg.svg);
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h1 {
+        font-size: 36px;
+        color: #ffffff;
+    }
+}
+
+.resources-links {
+    margin: 50px 0;
+
+    .columns {
+        margin-bottom: 50px;
+    }
+    a {
+        transition: all 0.3s;
+        .type {
+            min-height: 130px;
+            background-color: #999999;
+            width: 100%;
+            font-size: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .bottom {
+            min-height: 45px;
+            display: flex;
+            align-items: center;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 0 10px;
+        }
+        .donwload {
+            font-size: 21px;
+            color: $primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            i {
+                font-size: 30px;
+                margin-left: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+header {
+    min-height: 235px;
+    display: flex;
+    align-items: center;
+    .logo {
+        width: 100%;
+        max-width: 290px;
+    }
+
+    .search-option {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        form {
+            display: flex;
+            max-width: 260px;
+            input[type="text"] {
+                background-color: #E6E6E6;
+                border: 0;
+                color: #999999;
+                padding: 8px 10px;
+                width: 100%;;
+                font-size: 18px;
+            }
+            button {
+                background-color: #E6E6E6;
+                border: 0;
+                height: 37px;
+            }
+            i{  
+                font-size: 20px;
+                color: #999999;
+            }
+        }
+        .user {
+            background-color: #E6E6E6;
+            height: 37px;
+            width: 37px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-left: 10px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            &:hover {
+                background-color: $secundary-color;
+            }
+            i {
+                color: $primary-color;
+                font-size: 20px;
+            }
+        }
+
+        .setting {
+            position: relative;
+           &>a {
+                background-color: #E6E6E6;
+                height: 37px;
+                width: 37px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px;
+                border-radius: 5px;
+                transition: all 0.3s;
+                position: relative;
+                &:hover {
+                    background-color: $secundary-color;
+                }
+                i {
+                    color: #999;
+                    font-size: 20px;
+                }
+            }
+
+            ul {
+                position: absolute;
+                height: 0;
+                overflow: hidden;
+                z-index: 10;
+                transition: all 0.3s;
+                right: 0px;
+                li {
+                    padding: 5px 20px;
+                    text-align: right;
+                    background-color: #E6E6E6;
+                    &:hover {
+                        background: #999;
+                    }
+                    a {
+                        color: $primary-color;
+                        margin: 0;
+                        padding: 0;
+                        background: none;
+                        &:hover {
+                            background: none;
+                        }
+                    }
+                }
+
+            }
+            &:hover {
+                ul {
+                    height: auto;
+                }
+            }
+        }
+    }
+    p {
+        font-size: 18px;
+        font-family: $primary-font;
+        font-weight: 700;
+        color: $primary-color;
+        margin-right: 47px;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        ul {
+            li {
+                padding: 15px 30px;
+                border-right: 2px solid $secundary-color;
+                display: inline-block;
+                &:last-child {
+                    border-right: none;
+                }
+                a {
+                    font-size: 28px;
+                    color: $primary-color;
+                    position: relative;
+                    transition: all 0.3s;
+                    &:after{
+                        content: ' ';
+                        height: 3px;
+                        background-color: $secundary-color;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        transition: all 0.3s;
+                    }
+                    &:hover {
+                        color: $primary-color;
+                        &:after {
+                            width: 100%;
+                        }
+                    }
+                    &.active {
+                        &:after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'LTTetria';
+}
+
+@import '../vendors/fontawesome.min.css';
+
+@font-face {
+    font-family: 'LTTetria';
+    src: url('../fonts/LinotypeTetria-Regular.eot');
+    src: url('../fonts/LinotypeTetria-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LinotypeTetria-Regular.woff2') format('woff2'),
+        url('../fonts/LinotypeTetria-Regular.woff') format('woff'),
+        url('../fonts/LinotypeTetria-Regular.ttf') format('truetype'),
+        url('../fonts/LinotypeTetria-Regular.svg#LinotypeTetria-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LTTetria';
+    src: url('../fonts/LinotypeTetria-LightTab.eot');
+    src: url('../fonts/LinotypeTetria-LightTab.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LinotypeTetria-LightTab.woff2') format('woff2'),
+        url('../fonts/LinotypeTetria-LightTab.woff') format('woff'),
+        url('../fonts/LinotypeTetria-LightTab.ttf') format('truetype'),
+        url('../fonts/LinotypeTetria-LightTab.svg#LinotypeTetria-LightTab') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LTTetria';
+    src: url('../fonts/LinotypeTetria-Bold.eot');
+    src: url('../fonts/LinotypeTetria-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LinotypeTetria-Bold.woff2') format('woff2'),
+        url('../fonts/LinotypeTetria-Bold.woff') format('woff'),
+        url('../fonts/LinotypeTetria-Bold.ttf') format('truetype'),
+        url('../fonts/LinotypeTetria-Bold.svg#LinotypeTetria-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+$primary-font: 'LTTetria';
+$primary-color: #0033A0;
+
+$secundary-color: #E4B212;
+
+$yellow: #E4B212;
+
+
+main {
+    background-image: url( ../img/bg2.svg);
+    background-size: auto;
+    background-repeat: repeat;
+    padding-bottom: 50px;
+    &.white {
+        background-image: none;
+        background-color: #ffffff;
+    }
+}
+
+h2 {
+    font-size: 30px;
+    font-family: $primary-font;
+    color: #000000;
+}
