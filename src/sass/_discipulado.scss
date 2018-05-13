@@ -30,31 +30,7 @@
         }
     }
 
-    .links {
-        text-align: right;
-        margin-top: 50px;
-        display: block;
-        a {
-            color: $primary-color;
-            font-size: 18px;
-            text-transform: uppercase;
-            display: inline-block;
-            margin: 0 20px;
-            text-align: center;
-            &:hover {
-                img {
-                    transform: scale(1.1)
-                }
-            }
-        }
-        img {
-            width: 50px;
-            display: block;
-            margin: 0 auto;
-            transition: all 0.3s;
-        }
-        
-    }
+    
     .aside {
         h3 {
             font-size: 24px;
@@ -195,6 +171,191 @@
             i {
                 font-size: 30px;
                 margin-left: 15px;
+            }
+        }
+    }
+}
+
+.links {
+    text-align: right;
+    margin-top: 50px;
+    display: block;
+    h2 {
+        float: left;
+    }
+    a {
+        color: $primary-color;
+        font-size: 18px;
+        text-transform: uppercase;
+        display: inline-block;
+        margin: 0 20px;
+        text-align: center;
+        &:hover {
+            img {
+                transform: scale(1.1)
+            }
+        }
+    }
+    img {
+        width: 50px;
+        display: block;
+        margin: 0 auto;
+        transition: all 0.3s;
+    }
+    
+}
+
+p.time {
+ font-size: 20px;
+ color: #999999;
+}
+
+.visor {
+    background-color: $primary-color;
+    padding: 40px 20px;
+    .logo {
+        display: block;
+        width: 200px;
+        margin: 0 auto 20px;
+    }
+    .viewer {
+        width: 100%;
+        min-height: 500px;
+        background-color: #fff;
+        position: relative;
+        .back {
+            display: inline-block;
+            background: #000000;
+            padding: 10px 20px;
+            transition: all 0.3s;
+            color: #fff;
+            font-size: 20px;
+            position: absolute;
+            bottom: 0;
+            i {
+                transition: all 0.3s;
+            }
+            &:hover {
+                i {
+                    transform: translateX(-5px);
+                }
+            }
+        }
+
+        .next {
+            display: inline-block;
+            background: #000000;
+            padding: 10px 20px;
+            transition: all 0.3s;
+            color: #fff;
+            font-size: 20px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            i {
+                transition: all 0.3s;
+            }
+            &:hover {
+                i {
+                    transform: translateX(5px);
+                }
+            }
+        }
+    }
+    .content-bar {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .progress2 {
+        width: 100%;
+        max-width: 415px;
+        display: block;
+        margin: 0 auto 0;
+        p {
+            font-size: 24px;
+            color: #ffffff;
+        }
+        .bar {
+            height: 28px;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: #000;
+            div {
+                background-color: $yellow;
+                height: 28px;
+                width: 40%;
+            }
+        }
+    }
+    .donwload {
+        color: #fff;
+        font-size: 25px;
+        float: right;
+        i {
+            margin-left: 15px;
+            font-size: 35px;
+        }
+    }
+}
+
+.next-module {
+    font-size: 24px;
+    color: #000000;
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    &:hover {
+        i {
+            transform: translateX(5px);
+        }
+    }
+    i {
+        color: $yellow;
+        font-size: 30px;
+        transition: all 0.3s;
+    }
+}
+
+.homework {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    .text {
+        h3 {
+            color: $primary-color;
+            font-size: 24px;
+        }
+        p {
+            font-size: 18px;
+            color: #000;
+        }
+    }
+    .upload {
+        color: $primary-color;
+        font-size: 25px;
+        text-transform: uppercase;
+        min-width: 170px;
+        text-align: right;
+        a {
+            i {
+                font-size: 35px;
+                margin-right: 10px;
+                color: $primary-color;
+            }
+            p{
+                color: $primary-color;
+                font-size: 20px;
+                text-transform: uppercase;
+                line-height: 20px;
+                float: right;
+            }
+            &:hover {
+               i, p {
+                   color: $yellow;
+               }
             }
         }
     }
