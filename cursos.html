@@ -4,43 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Elearning</title>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>Elearning</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="columns">
-                <div class="column is-half">
+            <div class="columns is-mobile">
+                <div class="column is-half is-half-mobile">
                     <a href="javascript:;">
                         <img src="dist/img/logo.svg" alt="logo" class="logo">
                     </a>
                 </div>
-                <div class="column is-half has-text-right">
+                <div class="column is-half has-text-right hide-mobile">
                     <div class="search-option">
-                            <form action="/">
-                                    <input type="text" name="search" placeholder="Buscar">
-                                    <button><i class="fas fa-search"></i></button>
-                            </form>
-                            <a href="javascript" class="user">
-                                <i class="fas fa-user"></i>
+                        <form action="/">
+                                <input type="text" name="search" placeholder="Buscar">
+                                <button><i class="fas fa-search"></i></button>
+                        </form>
+                        <a href="javascript" class="user">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <div class="setting">
+                            <a href="javascript:;">
+                                <i class="fas fa-cog"></i>
                             </a>
-                            <div class="setting">
-                                <a href="javascript:;">
-                                    <i class="fas fa-cog"></i>
-                                </a>
-                                <ul>
-                                    <li>
-                                        <a href="javascript:;">Perfil</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">Salir</a>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                    <p>Miguel Tejada</p>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">Perfil</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Salir</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                <p>Miguel Tejada</p>
                     <nav>
                         <ul>
                             <li>
@@ -52,9 +53,37 @@
                         </ul>
                     </nav>
                 </div>
+                <div class="column is-half is-half-mobile show-mobile">
+                    <a href="javascript:;" class="nav">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
+    <nav class="mobileMenu">
+        <div class="search-option">
+            <form action="/">
+                    <input type="text" name="search" placeholder="Buscar">
+                    <button><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="user-avatar">
+            <img src="http://via.placeholder.com/200x200" class="avatar">
+        </div>
+        <p>Miguel Tejada</p>
+        <a href="#">Perfil</a>
+        <a href="#">Salir</a>
+
+        <ul>
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="#">Salir</a>
+            </li>
+        </ul>  
+    </nav>
     <main class="white">
         <section class="header-title">
             <div class="container">
@@ -76,136 +105,136 @@
         <section class="cursos">
             <div class="container">
                 <div class="columns is-multiline">
-                    <div class="column is-3">
+                    <div class="column is-3 curso-item">
                         <img src="http://via.placeholder.com/200x200" alt="curso picture">
                         <p class="curso-title">Discipulado Infantil</p>
                         <small class="curso-category">Categoria: Desarrollo del niño</small>
                         <small class="curso-date">Fecha Limite: 22/04/2018</small>
-                        <div class="bar" data-cursado="50">
+                        <div class="bar" data-progress="20">
+                            <div></div>
+                        </div>
+                        <p class="cursado">20%</p>
+                    </div>
+
+                    <div class="column is-3 curso-item">
+                        <img src="http://via.placeholder.com/200x200" alt="curso picture">
+                        <p class="curso-title">Discipulado Infantil</p>
+                        <small class="curso-category">Categoria: Desarrollo del niño</small>
+                        <small class="curso-date">Fecha Limite: 22/04/2018</small>
+                        <div class="bar" data-progress="50">
                             <div></div>
                         </div>
                         <p class="cursado">50%</p>
                     </div>
 
-                    <div class="column is-3">
+                    <div class="column is-3 curso-item">
                         <img src="http://via.placeholder.com/200x200" alt="curso picture">
                         <p class="curso-title">Discipulado Infantil</p>
                         <small class="curso-category">Categoria: Desarrollo del niño</small>
                         <small class="curso-date">Fecha Limite: 22/04/2018</small>
-                        <div class="bar" data-cursado="50">
+                        <div class="bar" data-progress="50">
                             <div></div>
                         </div>
                         <p class="cursado">50%</p>
                     </div>
 
-                    <div class="column is-3">
+                    <div class="column is-3 curso-item">
                         <img src="http://via.placeholder.com/200x200" alt="curso picture">
                         <p class="curso-title">Discipulado Infantil</p>
                         <small class="curso-category">Categoria: Desarrollo del niño</small>
                         <small class="curso-date">Fecha Limite: 22/04/2018</small>
-                        <div class="bar" data-cursado="50">
+                        <div class="bar" data-progress="80">
+                            <div></div>
+                        </div>
+                        <p class="cursado">80%</p>
+                    </div>
+
+                    <div class="column is-3 curso-item">
+                        <img src="http://via.placeholder.com/200x200" alt="curso picture">
+                        <p class="curso-title">Discipulado Infantil</p>
+                        <small class="curso-category">Categoria: Desarrollo del niño</small>
+                        <small class="curso-date">Fecha Limite: 22/04/2018</small>
+                        <div class="bar" data-progress="10">
+                            <div></div>
+                        </div>
+                        <p class="cursado">10%</p>
+                    </div>
+
+                    <div class="column is-3 curso-item">
+                        <img src="http://via.placeholder.com/200x200" alt="curso picture">
+                        <p class="curso-title">Discipulado Infantil</p>
+                        <small class="curso-category">Categoria: Desarrollo del niño</small>
+                        <small class="curso-date">Fecha Limite: 22/04/2018</small>
+                        <div class="bar" data-progress="50">
                             <div></div>
                         </div>
                         <p class="cursado">50%</p>
                     </div>
 
-                    <div class="column is-3">
+                    <div class="column is-3 curso-item">
                         <img src="http://via.placeholder.com/200x200" alt="curso picture">
                         <p class="curso-title">Discipulado Infantil</p>
                         <small class="curso-category">Categoria: Desarrollo del niño</small>
                         <small class="curso-date">Fecha Limite: 22/04/2018</small>
-                        <div class="bar" data-cursado="50">
+                        <div class="bar" data-progress="70">
+                            <div></div>
+                        </div>
+                        <p class="cursado">70%</p>
+                    </div>
+
+                    <div class="column is-3 curso-item">
+                        <img src="http://via.placeholder.com/200x200" alt="curso picture">
+                        <p class="curso-title">Discipulado Infantil</p>
+                        <small class="curso-category">Categoria: Desarrollo del niño</small>
+                        <small class="curso-date">Fecha Limite: 22/04/2018</small>
+                        <div class="bar" data-progress="50">
                             <div></div>
                         </div>
                         <p class="cursado">50%</p>
                     </div>
 
-                    <div class="column is-3">
+                    <div class="column is-3 curso-item">
                         <img src="http://via.placeholder.com/200x200" alt="curso picture">
                         <p class="curso-title">Discipulado Infantil</p>
                         <small class="curso-category">Categoria: Desarrollo del niño</small>
                         <small class="curso-date">Fecha Limite: 22/04/2018</small>
-                        <div class="bar" data-cursado="50">
+                        <div class="bar" data-progress="0">
+                            <div></div>
+                        </div>
+                        <p class="cursado">0%</p>
+                    </div>
+
+                    <div class="column is-3 curso-item">
+                        <img src="http://via.placeholder.com/200x200" alt="curso picture">
+                        <p class="curso-title">Discipulado Infantil</p>
+                        <small class="curso-category">Categoria: Desarrollo del niño</small>
+                        <small class="curso-date">Fecha Limite: 22/04/2018</small>
+                        <div class="bar" data-progress="90">
+                            <div></div>
+                        </div>
+                        <p class="cursado">90%</p>
+                    </div>
+
+                    <div class="column is-3 curso-item">
+                        <img src="http://via.placeholder.com/200x200" alt="curso picture">
+                        <p class="curso-title">Discipulado Infantil</p>
+                        <small class="curso-category">Categoria: Desarrollo del niño</small>
+                        <small class="curso-date">Fecha Limite: 22/04/2018</small>
+                        <div class="bar" data-progress="50">
                             <div></div>
                         </div>
                         <p class="cursado">50%</p>
                     </div>
 
-                    <div class="column is-3">
+                    <div class="column is-3 curso-item">
                         <img src="http://via.placeholder.com/200x200" alt="curso picture">
                         <p class="curso-title">Discipulado Infantil</p>
                         <small class="curso-category">Categoria: Desarrollo del niño</small>
                         <small class="curso-date">Fecha Limite: 22/04/2018</small>
-                        <div class="bar" data-cursado="50">
+                        <div class="bar" data-progress="30">
                             <div></div>
                         </div>
-                        <p class="cursado">50%</p>
-                    </div>
-
-                    <div class="column is-3">
-                        <img src="http://via.placeholder.com/200x200" alt="curso picture">
-                        <p class="curso-title">Discipulado Infantil</p>
-                        <small class="curso-category">Categoria: Desarrollo del niño</small>
-                        <small class="curso-date">Fecha Limite: 22/04/2018</small>
-                        <div class="bar" data-cursado="50">
-                            <div></div>
-                        </div>
-                        <p class="cursado">50%</p>
-                    </div>
-
-                    <div class="column is-3">
-                        <img src="http://via.placeholder.com/200x200" alt="curso picture">
-                        <p class="curso-title">Discipulado Infantil</p>
-                        <small class="curso-category">Categoria: Desarrollo del niño</small>
-                        <small class="curso-date">Fecha Limite: 22/04/2018</small>
-                        <div class="bar" data-cursado="50">
-                            <div></div>
-                        </div>
-                        <p class="cursado">50%</p>
-                    </div>
-
-                    <div class="column is-3">
-                        <img src="http://via.placeholder.com/200x200" alt="curso picture">
-                        <p class="curso-title">Discipulado Infantil</p>
-                        <small class="curso-category">Categoria: Desarrollo del niño</small>
-                        <small class="curso-date">Fecha Limite: 22/04/2018</small>
-                        <div class="bar" data-cursado="50">
-                            <div></div>
-                        </div>
-                        <p class="cursado">50%</p>
-                    </div>
-
-                    <div class="column is-3">
-                        <img src="http://via.placeholder.com/200x200" alt="curso picture">
-                        <p class="curso-title">Discipulado Infantil</p>
-                        <small class="curso-category">Categoria: Desarrollo del niño</small>
-                        <small class="curso-date">Fecha Limite: 22/04/2018</small>
-                        <div class="bar" data-cursado="50">
-                            <div></div>
-                        </div>
-                        <p class="cursado">50%</p>
-                    </div>
-
-                    <div class="column is-3">
-                        <img src="http://via.placeholder.com/200x200" alt="curso picture">
-                        <p class="curso-title">Discipulado Infantil</p>
-                        <small class="curso-category">Categoria: Desarrollo del niño</small>
-                        <small class="curso-date">Fecha Limite: 22/04/2018</small>
-                        <div class="bar" data-cursado="50">
-                            <div></div>
-                        </div>
-                        <p class="cursado">50%</p>
-                    </div>
-
-                    <div class="column is-3">
-                        <img src="http://via.placeholder.com/200x200" alt="curso picture">
-                        <p class="curso-title">Discipulado Infantil</p>
-                        <small class="curso-category">Categoria: Desarrollo del niño</small>
-                        <small class="curso-date">Fecha Limite: 22/04/2018</small>
-                        <div class="bar" data-cursado="50">
-                            <div></div>
-                        </div>
-                        <p class="cursado">50%</p>
+                        <p class="cursado">30%</p>
                     </div>
                 </div>
             </div>

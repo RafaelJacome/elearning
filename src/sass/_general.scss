@@ -51,17 +51,36 @@ $yellow: #E4B212;
 
 
 main {
-    background-image: url( ../img/bg2.svg);
-    background-size: auto;
+    background-image: url( ../img/texture-gray-2.jpg);
+    background-size: 25%;
     background-repeat: repeat;
     padding-bottom: 50px;
+    transition: all 0.5s;
+    @media( max-width: 768px ){
+        background-size: contain, contain;   
+        padding-top: 70px;         
+    }
     &.white {
         background-image: none;
         background-color: #ffffff;
     }
     &.blueBG{
-        background-image: url(../img/bgBlue.jpg);
-        background-size: cover;
+        background-image: url(../img/img3.png), url(../img/texture-blue-2.jpg);
+        background-repeat: no-repeat, repeat;
+        background-size: contain, 25%;
+        background-position: center;
+        @media( max-width: 768px ){
+          background-size: contain, contain;            
+        }
+    }
+    &.blueBG2{
+        background-image: url(../img/texture-blue-2.jpg);
+        background-repeat: repeat;
+        background-size: 25%;
+        background-position: center;
+        @media( max-width: 768px ){
+          background-size: contain;            
+        }
     }
 }
 
@@ -106,4 +125,16 @@ h2 {
             }
         }
     }
+    
+    @media( max-width: 768px ){
+        bottom: 5px;
+        li {
+            margin: 0 5px;
+            &:after {
+                width: 15px;
+                height: 15px;
+            }
+        }        
+    }
 }
+

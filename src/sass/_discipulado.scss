@@ -4,11 +4,19 @@
     background-position: bottom center;
     display: flex;
     align-items: center;
+    background-size: cover;
     h1 {
         color: #ffffff;
         font-size: 72px;
         line-height: 75px;
         font-weight: 700;
+        @media( max-width: 480px ) {
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+    @media( max-width: 480px ) {
+        min-height: 300px;
     }
 }
 
@@ -61,6 +69,9 @@
             color: #4D4D4D;
             font-size: 18px;
             margin-top: 20px;
+            @media( max-width: 480px ) {
+                text-align: center;
+            }
         }
 
         .bar {
@@ -80,10 +91,21 @@
                     height: 10px;
                     background-color: $primary-color;
                 }
+                @media( max-width: 480px ) {
+                    width: 100%;
+                }
+                
             }
             span {
                 font-size: 24px;
                 color: #999999;
+                @media( max-width: 480px ) {
+                    text-align: center;
+                    display: block;
+                }
+            }
+            @media( max-width: 480px ) {
+                display: block;
             }
         }
 
@@ -121,7 +143,8 @@
 
 .label {
     background: $primary-color;
-    background-image:  url(../img/blue-bg.svg);
+    background-image: url(../img/texture-blue.jpg);
+    background-size: contain;
     min-height: 70px;
     display: flex;
     justify-content: center;
@@ -180,8 +203,13 @@
     text-align: right;
     margin-top: 50px;
     display: block;
+    
     h2 {
         float: left;
+        @media( max-width: 480px ) {
+            float: none;
+            margin-bottom: 20px;
+        }
     }
     a {
         color: $primary-color;
@@ -190,6 +218,11 @@
         display: inline-block;
         margin: 0 20px;
         text-align: center;
+        @media( max-width: 480px ) {
+           font-size: 16px;
+           margin: 0 15px;
+           margin-bottom: 20px;
+        }
         &:hover {
             img {
                 transform: scale(1.1)
@@ -201,7 +234,14 @@
         display: block;
         margin: 0 auto;
         transition: all 0.3s;
+        @media( max-width: 480px ) {
+            width: 30px;
+        }
     }
+    @media( max-width: 480px ) {
+        margin-bottom: 30px;
+        text-align: center;
+     }
     
 }
 
@@ -211,8 +251,13 @@ p.time {
 }
 
 .visor {
-    background-color: $primary-color;
+    background-image: url(../img/texture-blue.jpg);
+    background-size: 25%;
     padding: 40px 20px;
+    @media( max-width: 480px ) {
+        padding: 30px 10px;
+        background-size: 50%;
+    }
     .logo {
         display: block;
         width: 200px;
@@ -266,6 +311,9 @@ p.time {
         display: flex;
         align-items: center;
         margin-top: 30px;
+        @media( max-width: 480px ) {
+            display: block;
+        }
     }
     .progress2 {
         width: 100%;
@@ -286,7 +334,8 @@ p.time {
             div {
                 background-color: $yellow;
                 height: 28px;
-                width: 40%;
+                transition: all 1s;
+                width: 0%;
             }
         }
     }
@@ -297,6 +346,11 @@ p.time {
         i {
             margin-left: 15px;
             font-size: 35px;
+        }
+        @media( max-width: 480px ) {
+            float: none;
+            margin-top: 30px;
+            text-align: center;
         }
     }
 }
@@ -323,6 +377,9 @@ p.time {
     margin-top: 30px;
     display: flex;
     align-items: center;
+    @media( max-width: 480px ) {
+        display: block;
+    }
     .text {
         h3 {
             color: $primary-color;
@@ -344,6 +401,9 @@ p.time {
                 font-size: 35px;
                 margin-right: 10px;
                 color: $primary-color;
+                @media( max-width: 480px ) {
+                    margin-right: 0;
+                }
             }
             p{
                 color: $primary-color;
@@ -351,12 +411,20 @@ p.time {
                 text-transform: uppercase;
                 line-height: 20px;
                 float: right;
+                @media( max-width: 480px ) {
+                    float: none;
+                }
             }
             &:hover {
                i, p {
                    color: $yellow;
                }
             }
+        }
+        @media( max-width: 480px ) {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
         }
     }
 }

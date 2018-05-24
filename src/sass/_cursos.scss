@@ -1,6 +1,7 @@
 .header-title {
     padding: 20px 0;
-    background-color: #0033A0;
+    background-image: url(../img/texture-blue.jpg);
+    background-size: contain;
     min-height: 150px;
     display: flex;
     align-items: center;
@@ -82,8 +83,8 @@
                 div {
                     height: 15px;
                     background-color: #0033A0;
-                    width: 50%;
-                    transition: all 0.5s;
+                    width: 0%;
+                    transition: all 2s;
                 }
             }
             .cursado {

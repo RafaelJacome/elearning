@@ -2,7 +2,8 @@
     position: absolute;
     height: 150px;
     width: 100%;
-    background-color: #E4B212;
+    background-image: url(../img/texture-yellow.jpg);
+    background-size: contain;
     z-index: 0;
     @media( max-width: 768px ) {
        height: 75px;
@@ -33,9 +34,15 @@
             padding: 8px 10px;
             background-color: #E6E6E6;
             border-radius: 3px;
+            @media( max-width: 320px ) {
+                padding: 8px 5px;
+            }
             a {
                 color: #999999;
                 font-size: 16px;
+                @media( max-width: 320px ) {
+                    font-size: 14px
+                }
                 i {
                     color: #999999;
                     margin-right: 5px;
@@ -64,11 +71,19 @@
             @media( max-width: 768px ) {
                 margin-left: 50px;
             }
+            @media( max-width: 480px ) {
+                margin-left: 20px;
+                margin-top: -40px;
+            }
+            
             li {
                 padding-left: 60px;
                 position: relative;
                 left: -15px;
                 margin-bottom: 50px;
+                @media( max-width: 768px ) {
+                    padding-left: 45px;
+                }
                 &:before {
                     content: "";
                     height: 30px;

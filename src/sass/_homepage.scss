@@ -18,7 +18,7 @@
         color: #ffffff;
         font-size: 25px;
         font-weight: 700;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .icon {
@@ -72,6 +72,8 @@
     }
 
     .cursos {
+        margin-bottom: 0;
+        padding: 0;
         .columns {
             @media( max-width: 768px) {
                 border-bottom: 2px solid #E4B212;

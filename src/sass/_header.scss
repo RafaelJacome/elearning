@@ -3,12 +3,30 @@ header {
     display: flex;
     align-items: center;
     padding: 20px 0;
+    transition: all 0.5s;
+    @media( max-width: 768px) {
+        min-height: 70px;
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        background-color: #ffffff;
+    }
     .logo {
         width: 100%;
         max-width: 240px;
         @media( max-width: 768px) {
-            max-width: 150px;
+            max-width: 100px;
         }
+    }
+
+    .column {
+        @media( max-width: 768px) {
+            padding: 0 10px;
+        }
+    }
+    
+    .container {
+        width: 100%;
     }
 
     .search-option {
@@ -160,5 +178,19 @@ header {
                 }
             }
         }
+    }
+}
+
+.hide-mobile {
+    @media( max-width: 768px ) {
+        display: none;
+    }
+}
+.show-mobile {
+    display: none;
+    @media( max-width: 768px ) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
 }
