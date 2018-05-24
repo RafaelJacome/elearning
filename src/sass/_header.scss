@@ -1,10 +1,14 @@
 header {
-    min-height: 235px;
+    min-height: 100px;
     display: flex;
     align-items: center;
+    padding: 20px 0;
     .logo {
         width: 100%;
-        max-width: 290px;
+        max-width: 240px;
+        @media( max-width: 768px) {
+            max-width: 150px;
+        }
     }
 
     .search-option {
@@ -116,16 +120,19 @@ header {
     }
 
     nav {
+        @media( max-width: 768px) {
+           text-align: center;
+        }
         ul {
             li {
-                padding: 15px 30px;
+                padding: 10px 20px;
                 border-right: 2px solid $secundary-color;
                 display: inline-block;
                 &:last-child {
                     border-right: none;
                 }
                 a {
-                    font-size: 28px;
+                    font-size: 20px;
                     color: $primary-color;
                     position: relative;
                     transition: all 0.3s;

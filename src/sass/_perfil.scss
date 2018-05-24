@@ -1,0 +1,114 @@
+.bg-yellow {
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    background-color: #E4B212;
+    z-index: 0;
+    @media( max-width: 768px ) {
+       height: 75px;
+    }
+}
+
+.perfil {
+    position: relative;
+    .avatar {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 50%;
+        z-index: 99;
+        @media( max-width: 768px ) {
+            max-width: 100px;
+        }
+    }
+
+
+    .picture {
+        padding-top: 50px;
+        display: flex;
+        align-items: flex-end;
+        @media( max-width: 768px ) {
+            padding-top: 30px;
+        }
+        .upload-pic {
+            padding: 8px 10px;
+            background-color: #E6E6E6;
+            border-radius: 3px;
+            a {
+                color: #999999;
+                font-size: 16px;
+                i {
+                    color: #999999;
+                    margin-right: 5px;
+                    font-size: 20px;
+                    transition: all 0.3s;
+                }
+            }
+            &:hover {
+                a {
+                    i {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+
+    .user-data {
+        padding: 30px 0;
+
+        ul {
+            border-left: 2px solid #E4B212;
+            margin-left: 100px;
+            padding-top: 40px;
+            margin-top: -30px;
+            @media( max-width: 768px ) {
+                margin-left: 50px;
+            }
+            li {
+                padding-left: 60px;
+                position: relative;
+                left: -15px;
+                margin-bottom: 50px;
+                &:before {
+                    content: "";
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                    background-color: #E4B212;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                h1 {
+                    font-size: 30px;
+                    color: #0033A0;
+                }
+                p {
+                    font-size: 18px;
+                    color: #333333;
+                }
+
+                textarea {
+                    width: 100%;
+                    background-color: #E6E6E6;
+                    min-height: 100px;
+                    border:  none;
+                    font-size: 18px;
+                    color: #333333;
+                    padding: 20px;
+                }
+                input {
+                    background-color: #E6E6E6;
+                    font-size: 18px;
+                    color: #333333;
+                    border: none;
+                    padding: 5px 20px;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+
+
+
+}

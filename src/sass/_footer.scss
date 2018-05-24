@@ -1,6 +1,6 @@
 footer {
-    padding: 20px 20px;
-    min-height: 310px;
+    padding: 20px 20px 0;
+    min-height: 200px;
     background-color: #1A1A1A;
     display: flex;
     align-items: center;
@@ -9,17 +9,18 @@ footer {
         align-items: center;
         margin-bottom: 40px;
         p {
-            font-size: 20px;
+            font-size: 16px;
             font-family: $primary-font;
             color: #ffffff;
             font-weight: 700;
             line-height: 25px;
+            margin: 0;
             @media( max-width: 768px ) {
                 font-size: 16px;
             }
         }
         i {
-            font-size: 35px;
+            font-size: 30px;
             color: #ffffff;
             margin-right: 25px;
             &.fa-phone {
@@ -43,8 +44,8 @@ footer {
     }
 
     .icon {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -63,7 +64,7 @@ footer {
             background-color: #C4302B;            
         }
         i {
-            font-size: 30px;
+            font-size: 25px;
             color: #ffffff;
         }
     }

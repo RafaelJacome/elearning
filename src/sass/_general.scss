@@ -59,10 +59,51 @@ main {
         background-image: none;
         background-color: #ffffff;
     }
+    &.blueBG{
+        background-image: url(../img/bgBlue.jpg);
+        background-size: cover;
+    }
+}
+
+.container {
+    padding: 0 20px;
 }
 
 h2 {
     font-size: 30px;
     font-family: $primary-font;
     color: #000000;
+}
+
+
+
+.slick-dots{
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    li {
+        display: inline-block;
+        margin: 0 10px;
+        position: relative;
+        button {
+            opacity: 0;
+        }
+        &:after{
+            content: " ";
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: rgba(#ffffff, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.3s;
+        }
+        &.slick-active {
+            &:after{
+                background: rgba(#ffffff, 1);
+            }
+        }
+    }
 }

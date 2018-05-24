@@ -1,0 +1,68 @@
+.login {
+    padding: 100px 20px;
+    .logo {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 50px;
+        display: block;
+    }
+
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+        div {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        input[type='text'],
+        input[type='password'] {
+            border-radius: 10px;
+            background: transparent;
+            padding: 10px 20px;
+            color: #fff;
+            font-family: $primary-font;
+            font-size: 18px;    
+            border: 2px solid #ffffff;     
+            min-width: 300px;
+            margin-left: 20px;
+        }
+        label, a {
+            color: #fff;
+            font-size: 18px;
+            font-family: $primary-font;            
+        }
+        input[type='submit'] {
+            padding: 25px 30px;
+            background-color: #E4B212;
+            border: none;
+            color: #0033A0;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 20px;
+            min-width: 300px;
+        }
+        input[type='checkbox'] {
+            background: transparent;
+            position: relative;
+            margin-right: 20px;
+            &:after {
+                content: " ";
+                width: 25px;
+                height: 25px;
+                border-radius: 10px;
+                border: 1px solid #fff;
+                background: transparent;
+                position: absolute;
+                top: -9px;
+                left: -9px;
+                background: #0033A0;
+            }
+            &:checked {
+                &:after {
+                    background: #ffffff;
+                }
+            }
+        }
+    }
+}

@@ -7,4 +7,11 @@ $(document).ready( function(){
         bar.find("div").css("width", fill+"%");
         
     }
+
+
+    $(".slider").slick({
+        arrows: false,
+        dots: true,
+        fade: true
+    });
 });
