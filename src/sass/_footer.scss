@@ -1,75 +1,73 @@
 footer {
-    padding: 20px 20px;
-    min-height: 200px;
-    background-color: #1A1A1A;
+  padding: 20px 20px;
+  min-height: 200px;
+  background-color: #1A1A1A;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  position: relative;
+  .text {
     display: flex;
     align-items: center;
-    transition: all 0.5s;
-    .text {
-        display: flex;
-        align-items: center;
-        margin-bottom: 40px;
-        p {
-            font-size: 16px;
-            font-family: $primary-font;
-            color: #ffffff;
-            font-weight: 700;
-            line-height: 25px;
-            margin: 0;
-            @media( max-width: 768px ) {
-                font-size: 16px;
-            }
-        }
-        i {
-            font-size: 30px;
-            color: #ffffff;
-            margin-right: 25px;
-            &.fa-phone {
-                transform: rotateY(180deg)
-            }
-        }
-        &:nth-child(2) {
-            margin-bottom: 0;
-        }
+    margin-bottom: 40px;
+    p {
+      font-size: 16px;
+      font-family: $primary-font;
+      color: #ffffff;
+      font-weight: 700;
+      line-height: 25px;
+      margin: 0;
+      @media( max-width: 768px) {
+        font-size: 16px;
+      }
     }
-
-    .vertical-centered {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    i {
+      font-size: 30px;
+      color: #ffffff;
+      margin-right: 25px;
+      &.fa-phone {
+        transform: rotateY(180deg)
+      }
     }
-
-    a {
-        display: inline-block;
-        margin-right: 30px;
-        &:last-child {
-            margin-right: 0;
-        }
+    &:nth-child(2) {
+      margin-bottom: 0;
     }
-
-    .icon {
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: all 0.3s;
-        &:hover {
-            transform: scale(1.1);
-        }
-        &.facebook {
-            background-color: #3B5998;
-        }
-        &.vimeo {
-            background-color: #86C9EF;
-        }
-        &.youtube {
-            background-color: #C4302B;            
-        }
-        i {
-            font-size: 25px;
-            color: #ffffff;
-        }
+  }
+  .vertical-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a {
+    display: inline-block;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
     }
+  }
+  .icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &.facebook {
+      background-color: #3B5998;
+    }
+    &.vimeo {
+      background-color: #86C9EF;
+    }
+    &.youtube {
+      background-color: #C4302B;
+    }
+    i {
+      font-size: 25px;
+      color: #ffffff;
+    }
+  }
 }
